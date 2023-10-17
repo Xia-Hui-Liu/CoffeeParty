@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Coffee Company</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="css/bootstrap-override.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/coffeeBreak.jpeg" width="30" height="30" alt="The Coffee Party Logo" class="d-inline-block align-top">
+                    The Coffee Company
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="nav navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Index</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="nav-dropdown" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+                            <ul class="dropdown-menu" aria-labelledby="nav-dropdown">
+                                <li>
+                                    <a class="dropdown-item" href="coffeemachine.html">Coffee Machine</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="coffeeparty.html">Coffee Party</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="allproducts.html">All Products</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="aboutus.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container" role="main">
+        <div id="welcomeCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#welcomeCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Welcome 1"></button>
+                <button type="button" data-bs-target="#welcomeCarousel" data-bs-slide-to="1"
+                    aria-label="Welcome 2"></button>
+                <button type="button" data-bs-target="#welcomeCarousel" data-bs-slide-to="2"
+                aria-label="Welcome 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item welcome-carousel-image1 active">
+                    <div class="carousel-caption">
+                        <h1>Welcome to The Coffee Company</h1>
+                        <p>We make the finest coffee on the internet.</p>
+                    </div>
+                </div>
+                <div class="carousel-item welcome-carousel-image2">
+                    <div class="carousel-caption text-start">
+                       <h1>Find out our best coffee makers</h1> 
+                       <p>Our best coffee maker delivered to your door.</p>
+                    </div>
+                </div>
+                <div class="carousel-item welcome-carousel-image3">
+                    <div class="carousel-caption text-end">
+                        <h1>Our Coffee Parties</h1>
+                        <p>Dive into the world of coffee with our exclusive Coffee Parties.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#welcomeCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#welcomeCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <nav aria-label="breadcrumb" class="my-3 ms-3">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">Home</li>
+            </ol>
+        </nav>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h2 class="pb-4 mb-4 fst-italic">About Us</h2>
+                    <div id="aboutUsCollapse">
+                        <p>
+                            At <b>The Coffee Company</b>, we're not just passionate about coffee; 
+                            we're obsessed with it. We live and breathe every aspect, 
+                            from sourcing the finest beans to curating a symphony of flavors for your palate.
+                        </p>
+                        <div class="collapse" id="collapseContent">
+                            <h5>What We Do</h5>
+                            <p>
+                                We're more than just a coffee provider; we're your partners in a journey through the world of exceptional brews. 
+                                Our offerings extend beyond a mere cup of coffee; we bring you an experience.
+                                <ul>
+                                    <li>
+                                        <b>Quality Coffee & Machines for Businesses:</b> Elevate your office space with our meticulously selected coffee beans and state-of-the-art machines, ensuring your team starts each day with a perfect brew.
+                                    </li>
+                                    <li>
+                                        <b>Private Coffee Parties: </b> Experience coffee like never before in the comfort of your own space. Our expert baristas guide you through a selection of the finest coffee varieties, perfectly paired with indulgent dark chocolates.
+                                    </li>
+                                    <li>
+                                        <b>Tailored Events for Corporates:</b> Impress your clients, reward your team, or create unforgettable networking events with our custom-designed coffee experiences.
+                                    </li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div class="collapse" id="collapseContent">
+                            <h5>Why Choose Us</h5>
+                            <ul>
+                                <li>
+                                    <b>Unrivaled Expertise:</b>With years of expertise in the coffee industry, our team knows what it takes to create the perfect cup. We source from the most renowned coffee regions, ensuring only the highest quality beans reach your cup.
+                                </li>
+                                <li>
+                                    <b>Personalized Service: </b>We believe in understanding your unique tastes and preferences. Whether it's for your office or a private event, we tailor our offerings to suit your exact needs.
+                                </li>
+                                <li>
+                                    <b>Sustainability at Heart:</b>We're committed to ethical sourcing, supporting local communities, and minimizing our environmental footprint. Your love for coffee supports a greater cause.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="collapse" id="collapseContent">
+                            <h5>How the Coffee Party Works</h5>
+                            <p>
+                                Dive into the world of coffee with our exclusive Coffee Parties. Our experienced baristas will guide you through a curated selection of coffees, 
+                                showcasing the rich nuances and flavors that each blend offers. As you savor the brew, 
+                                complemented by luxurious dark chocolates, you'll have the opportunity to take your favorite flavors home.
+                                <br><br>At <b>The Coffee Company</b>, we invite you to join us on a journey that transcends the ordinary cup of coffee.
+                                Discover a world of flavors, aromas, and experiences that redefine your coffee expectations.
+                            </p>
+                        </div>
+                        <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseContent" aria-expanded="false">
+                            Read more
+                        </button>
+                    </div>
+                </div>
+                <aside class="col-lg-4">
+                    <div class="p-4 mb-3 bg-secondary rounded text-white">
+                        <h4>Contact us</h4>
+                        <p class="mb-0">Send us your questions via info@thecoffeecompany.com</p>
+                    </div>
+                </aside>
+            </div>
+        </div>
+         
+        <div class="container aboutus">
+            <h2 class="pb-4 mb-2 mt-5">Products of the week</h2>
+            <div class="row row-cols-1 row-cols-lg-2 row-cols-xxl-3 g-4">
+                <div class="col">
+                    <div class="card rounded mb-4 shadow-sm">
+                        <img class="card-img-top" src="images/coffeeMachine.webp" height="300" width="150"  alt="coffee machine">
+                        <div class="card-body">
+                            <h5 class="card-title">Coffee Maker</h5>
+                            <p class="card-text">Find out the most popular coffee maker!</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary">View details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card rounded mb-4 shadow-sm">
+                        <img class="card-img-top" src="images/CoffeeTasting.jpeg" height="300" width="150" alt="coffee tasting">
+                        <div class="card-body">
+                            <h5 class="card-title">Tasting the coffee</h5>
+                            <p class="card-text">Our famous coffee flavors!</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary">View details</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+    <hr class="footer-divider"></hr>
+    <footer class="container " style="text-align: center;">
+        <div class="row">
+            <div class="footer-content col mx-auto">
+                <p>
+                    <img src="images/coffeeBreak.jpeg" style="width: 30px;" alt="logo">&copy; 2023 The Coffee Company - All Rights Reserved.</p>
+                <p>Last updated: October 16, 2023</p>
+                <p>Built and Designed by Xiahui Liu</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>   
+</body>
+</html>

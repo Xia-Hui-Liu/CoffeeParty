@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Coffee Company</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="css/bootstrap-override.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/coffeeBreak.jpeg" width="30" height="30" alt="The Coffee Party Logo" class="d-inline-block align-top">
+                    The Coffee Company
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="nav navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Index</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="nav-dropdown" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+                            <ul class="dropdown-menu" aria-labelledby="nav-dropdown">
+                                <li>
+                                    <a class="dropdown-item" href="coffeemachine.html">Coffee Machine</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="coffeeparty.html">Coffee Party</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="allproducts.html">All Products</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="aboutus.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container allproducts">
+        <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';" class="my-3 ms-3">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item"><a href="/allproducts">Products</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Coffee Parties</li>
+            </ol>
+        </nav>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="card rounded shadow-sm allproducts-card">
+                    <img class="card-img-top" src="images/coffeeparty1.jpeg"  alt="coffeeparty">
+                    <div class="card-body">
+                        <h6 class="card-title">Coffee Parties </h6>
+                        <p class="card-text">For private and company groups.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="coffeeparty.html" class="btn btn-primary">View details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card rounded shadow-sm allproducts-card">
+                    <img class="card-img-top" src="images/coffeeMachine.webp"  alt="coffeemachine">
+                    <div class="card-body">
+                        <h6 class="card-title">Coffee Makes </h6>
+                        <p class="card-text">We have the best coffee makes online, please to check the details.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="coffeeMachine.html" class="btn btn-primary">View details</a>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <hr class="footer-divider"></hr>
+    <footer class="container " style="text-align: center;">
+        <div class="row">
+            <div class="footer-content col mx-auto">
+                <p>
+                    <img src="images/coffeeBreak.jpeg" style="width: 30px;" alt="logo">&copy; 2023 The Coffee Company - All Rights Reserved.</p>
+                <p>Last updated: October 16, 2023</p>
+                <p>Built and Designed by Xiahui Liu</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>   
+</body>
+</html>
