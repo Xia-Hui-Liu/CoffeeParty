@@ -84,3 +84,24 @@
 .allproducts-card .card-img-top {
   object-fit: cover;
 }
+
+.jumbotron-other {
+  background: url('../images/carousel3.jpeg') no-repeat fixed;
+}
+
+.jumbotron {
+  box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.1);
+  height: 20vh;
+  background-size: cover;
+}
+
+.contact .card-img-top {
+  object-fit: contain;
+  height: 80px;
+  width: 80px;
+  border: rgb(232, 226, 226) solid 1px; 
+}
+
+.contact .card {
+  text-align: center;
+}
