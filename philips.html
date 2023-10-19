@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Coffee Company</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="css/bootstrap-override.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/coffeeBreak.jpeg" width="30" height="30" alt="The Coffee Party Logo" class="d-inline-block align-top">
+                    The Coffee Company
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="nav navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Index</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="nav-dropdown" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+                            <ul class="dropdown-menu" aria-labelledby="nav-dropdown">
+                                <li>
+                                    <a class="dropdown-item" href="coffeemachine.html">Coffee Machine</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="coffeeparty.html">Coffee Party</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="allproducts.html">All Products</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container-fluid jumbotron jumbotron-detail-coffeemachine py-5">
+            <div class="container">
+                <h1 class="display-3 fw-bold text-white">Coffee Machine</h1>
+            </div>
+        </div>
+       
+        <div class="container">
+            <nav class="my-3 ms-3" style="--bs-breadcrumb-divider: '>';">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/">Index</a></li>
+                    <li class="breadcrumb-item"><a href="/allproducts.html">Products</a></li>
+                    <li class="breadcrumb-item"><a href="/coffeeMachine.html">Coffee Machine</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Philips 3200</li>
+                </ol>
+            </nav>
+            <h1 class="fw-bold">Philips 3200
+                <small class="fw-normal fst-italic">Our famous, number-one selling coffee maker.</small>
+            </h1>
+
+            <div class="row">
+                <div class="col-6 col-lg-8">
+                    <img src="images/coffeeMachine2.png" alt="philips 3200" class="img-fluid rounded-1">
+                </div>
+
+                <div class="col-6 col-lg-4">
+                    <h3 class="my-3">About Philips 3200</h3>
+                    <p class="lead text-center">Bean to Cup coffee machine</p>
+                    <p>LatteGo, the fastest to clean milk system ever*</p>
+                    <ul>
+                        <li>Enjoy 5 coffees at your fingertips, including cappuccino</li>
+                        <li>Silky-smooth cappuccino; freshly brewed by yourself at home</li>
+                        <li>Easy selection of your coffee with intuitive touch display</li>
+                        <li>Adjust aroma strength and quantity via My Coffee Choice</li>
+                        <li>Easily adjust to your taste with 12-step grinder levels</li>
+                    </ul>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <strong>7149,00kr</strong>
+                        </div>
+                        <div class="col-md-8">
+                            <a type="button" href="shoppingbasket.html" class="btn btn-success float-end"
+                                data-bs-toggle="offcanvas" data-bs-target="#shoppingCart" aria-controls="shoppingCart">
+                                Add to cart
+                            </a>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <div class="offcanvas offcanvas-start shopping-cart-offcanvas" data-bs-scroll="true" tabindex="-1"
+            id="shoppingCart" aria-labelledby="shoppingCartLabel">
+
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="shoppingCartLabel">Your shopping cart</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+
+            <div class="offcanvas-body">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Product name</th>
+                                <th>Quantity</th>
+                                <th class="text-center">Price</th>
+                                <th class="text-center">Total</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                    
+                        <tbody>
+                            <tr>
+                                <td class="col-sm-8 col-md-6">
+                                    <div class="media">
+                                        <img class="mr-3 thumbnail" width="75" src="images/products/coffeeMachine1"
+                                            alt="coffee maker">
+                                        <div class="media-body">
+                                            <h5 class="mt-0 media-heading text-primary">Coffee Maker</h5>
+                                            <span>Status: </span><span class="text-warning"><strong>Last
+                                                    items</strong></span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="col-sm-1 col-md-1" style="text-align: center">
+                                    <input type="number" class="form-control" value="1">
+                                </td>
+                                <td class="col-sm-1 col-md-1 text-center"><strong>7149,00kr</strong></td>
+                                <td class="col-sm-1 col-md-1">
+                                    <button type="button" class="btn btn-danger">
+                                        X
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="text-right">
+                                    <h5>Subtotal</h5>
+                                </td>
+                                <td class="text-center">
+                                    <h5><strong></strong></h5>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="text-right">
+                                    <h5>Shipping</h5>
+                                </td>
+                                <td class="text-center">
+                                    <h5><strong>139.00kr</strong></h5>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="text-right">
+                                    <h3>Total</h3>
+                                </td>
+                                <td class="text-center">
+                                    <h3><strong>7288,00kr</strong></h3>
+                                </td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <form class="m-1">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Promo code">
+                        <div class="input-group-append">
+                            <button type="button" class="btn btn-secondary">Redeem</button>
+                        </div>
+                    </div>
+                </form>
+                <a type="button" href="order.html" class="m-1 btn btn-success">
+                    Go to order page
+                </a>
+
+                <a type="button" href="" class="m-1 btn btn-danger" data-bs-toggle="modal"
+                    data-bs-target="#cancelModal">
+                    Clear your shopping cart
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="modal fade" id="cancelModal" tabindex="-1" aria-labelledby="cancelModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Clear basket</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Are you sure you want to clear your cart?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-danger">Yes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+</html>
